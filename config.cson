@@ -1,0 +1,99 @@
+"*":
+  "atom-alignment": {}
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+  "atom-html-preview":
+    enableMathJax: true
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui": {}
+    hyperclick:
+      darwinTriggerKeys: "shiftKey"
+      linuxTriggerKeys: "shiftKey"
+      win32TriggerKeys: "shiftKey"
+    use:
+      "atom-ide-refactor": "always"
+      hyperclick: "always"
+  "autocomplete-plus":
+    autoActivationDelay: 100
+  "autocomplete-python":
+    outputDebug: true
+    outputProviderErrors: true
+    showTooltips: true
+  "bracket-matcher":
+    autocompleteBrackets: false
+    wrapSelectionsInBrackets: false
+  core:
+    disabledPackages: [
+      "spell-check"
+      "python-debugger"
+      "aligner-javascript"
+      "highlight-selected"
+      "symbols-view"
+      "atom-ide-debugger-python"
+      "atom-ide-ui"
+      "autocomplete-plus"
+      "aligner"
+      "ide-python"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      ".mypy_cache"
+      ".venv"
+      "__pycache__"
+      "*.pyc"
+    ]
+    packagesWithKeymapsDisabled: [
+      "regex-railroad-diagram"
+    ]
+    telemetryConsent: "no"
+    useTreeSitterParsers: false
+  editor:
+    fontFamily: "Inconsolata, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontSize: 25
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "2d116cf2-93a8-404a-acf0-008d6eef0da4"
+  "file-icons": {}
+  "highlight-selected":
+    highlightBackground: true
+  "ide-python":
+    pylsPlugins:
+      autopep8: {}
+  kite:
+    showWelcomeNotificationOnStartup: false
+  "linter-mypy":
+    lintTrigger: "LintAsYouType"
+    mypyIniFile: "$PROJECT_PATH/mypy.ini"
+    mypyPath: "$PROJECT_PATH/stubs:$PROJECT_PATH"
+  "linter-ui-default":
+    panelHeight: 211
+    showPanel: true
+    showProviderName: true
+  minimap: {}
+  "scroll-color":
+    ScrollBackground: "#59957d"
+  "show-invisibles-plus":
+    borders: {}
+    placeholders: {}
+    show: false
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+".js.source":
+  editor:
+    showInvisibles: false
+".source.yaml":
+  editor:
+    tabLength: 2

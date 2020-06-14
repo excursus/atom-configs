@@ -1,0 +1,63 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+# *Unlike style sheets however, each selector can only be declared once.*
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+
+# Todo: Align these along comments. Use https://tinyurl.com/y7zndcnw
+# Xcode key bindings
+'atom-text-editor':
+  'cmd-0': 'tree-view:toggle' # toggle tree view
+  'cmd-shift-j': 'tree-view:reveal-active-file'   # reveal active file in left panel AND expand folders to show the file
+  'cmd-j': 'tree-view:toggle-focus' # reveal active file in left panel (not expanding folders)
+  #'ctrl-k': 'editor:delete-to-end-of-line' # Uncomment to delete; as is, this cuts to end of line.
+'atom-workspace':
+  'cmd-\\': 'debugger:toggle-breakpoint' # toggle breakpoing
+  'cmd-alt-0': 'outline-view:toggle' # show outline view
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-i': 'editor:auto-indent' # auto-indent
+
+'body':
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+  'cmd-shift-o': 'fuzzy-finder:toggle-file-finder' # new [Xcode] file search binding
+  'cmd-p': 'unset!', # unset old file search binding
+  'cmp-t': 'unset!', # unset old file search binding
+
+  # Turn off MRU (most recently used) tab switching https://tinyurl.com/y7j8zq4e
+  'ctrl-tab ^ctrl': 'unset!'
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab ^ctrl': 'unset!'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+
+
+# HTML Editing
+'atom-text-editor[data-grammar~=html]':
+  'cmd-ctrl-h': 'atom-html-preview:toggle' # i forget what this is
